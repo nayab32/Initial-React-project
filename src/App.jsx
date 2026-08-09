@@ -49,24 +49,59 @@
 
 // STATE
 
-import {useState} from "react";
-import Counter from "./Counter";
-function App(){
-  const [fruit,setfruit]=useState("Apple");
-   const handlefruit=()=>{
-    setfruit("Banana")
-   }
+// import {useState} from "react";
+// import Counter from "./Counter";
+// function App(){
+//   const [fruit,setfruit]=useState("Apple");
+//    const handlefruit=()=>{
+//     setfruit("Banana")
+//    }
   
 
 
-  return(
-    <div>
-     <h1>{fruit}</h1>
-     <button onClick={handlefruit}>Change fruit Name</button>
-     <Counter />
+//   return(
+//     <div>
+//      <h1>{fruit}</h1>
+//      <button onClick={handlefruit}>Change fruit Name</button>
+//      <Counter />
     
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
+import { useState } from "react";
+import User from "./User";
+
+function App(){
+
+  const {display,setDisplay}=useState(true)
+//   return(
+//   <div>
+    // <h1>Toggle in React js</h1>
+
+    
+//     {/* {
+//       display? <h1>Iqra Nayab</h1>:null
+//     } */}
+
+    //  {
+    //   display? <User/> : null
+    // }
+    // <button onClick={()=>setDisplay(display)}>Toggle</button>
+    
+//   </div>
+//   )
+return(
+  <div>
+    <h1>Toggle in React JS</h1>
+     {
+      display? <User/> : null
+    }
+    <button onClick={()=>setDisplay(display)}>Toggle</button>
+    <h1>App is working!</h1>
+    <User />
+  </div>
+);
+}
+export default App;
