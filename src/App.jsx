@@ -71,11 +71,12 @@
 
 // export default App
 import { useState } from "react";
-import User from "./User";
+// import User from "./User";
 
 function App(){
 
-  const {display,setDisplay}=useState(true)
+
+  // const {display,setDisplay}=useState(true)
 //   return(
 //   <div>
     // <h1>Toggle in React js</h1>
@@ -92,16 +93,33 @@ function App(){
     
 //   </div>
 //   )
+// return(
+//   <div>
+//     <h1>Toggle in React JS</h1>
+//      {
+//       display? <User/> : null
+//     }
+//     <button onClick={()=>setDisplay(display)}>Toggle</button>
+//     <h1>App is working!</h1>
+//     <User />
+//   </div>
+// );
+// }
+const [count,setCount]=useState(3);
 return(
-  <div>
-    <h1>Toggle in React JS</h1>
-     {
-      display? <User/> : null
-    }
-    <button onClick={()=>setDisplay(display)}>Toggle</button>
-    <h1>App is working!</h1>
-    <User />
-  </div>
-);
+<div>
+  <h1>{count}</h1>
+  <button onClick={()=>setCount(count+1)}>Counter</button>
+  {
+    count==0?<h1>Condition 0</h1>
+    :count==2?<h1>Condition 1</h1>
+    :count==3?<h1>Condition 2</h1>
+    :count==4?<h1>Condition 3</h1>
+    :count==5?<h1>Condition 4</h1>
+    :null
+  }
+</div>
+)
 }
+
 export default App;
