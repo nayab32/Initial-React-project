@@ -70,10 +70,10 @@
 // }
 
 // export default App
-import { useState } from "react";
-// import User from "./User";
+// import { useState } from "react";
+// // import User from "./User";
 
-function App(){
+// function App(){
 
 
   // const {display,setDisplay}=useState(true)
@@ -104,22 +104,29 @@ function App(){
 //     <User />
 //   </div>
 // );
+// // }
+// const [count,setCount]=useState(3);
+// return(
+// <div>
+//   <h1>{count}</h1>
+//   <button onClick={()=>setCount(count+1)}>Counter</button>
+//   {
+//     count==0?<h1>Condition 0</h1>
+//     :count==2?<h1>Condition 1</h1>
+//     :count==3?<h1>Condition 2</h1>
+//     :count==4?<h1>Condition 3</h1>
+//     :count==5?<h1>Condition 4</h1>
+//     :null
+//   }
+// </div>
+// )
 // }
-const [count,setCount]=useState(3);
-return(
-<div>
-  <h1>{count}</h1>
-  <button onClick={()=>setCount(count+1)}>Counter</button>
-  {
-    count==0?<h1>Condition 0</h1>
-    :count==2?<h1>Condition 1</h1>
-    :count==3?<h1>Condition 2</h1>
-    :count==4?<h1>Condition 3</h1>
-    :count==5?<h1>Condition 4</h1>
-    :null
-  }
-</div>
-)
-}
 
+// export default App;
+
+import OnChange from "./OnChange";
+function App(){
+  return<OnChange />
+
+}
 export default App;
