@@ -172,18 +172,15 @@
 // export default App;
 
 // import Nested from "./Nested";
-import Student from "./Student";
+import FormValidation from "./FormValidation";
 function App(){
   return(
    <div>
-    <h1>My Student</h1>
-    <h2>Student name="Iqra" </h2>
+    <FormValidation />
+    
    </div>
    
-  )
-
-  
-  
+  );
 
 }
 export default App;
