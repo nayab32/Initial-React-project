@@ -160,11 +160,23 @@
 // }
 // export default App;
 
-import Nested from "./Nested";
+// import Nested from "./Nested";
+// function App(){
+//   return( 
+//     <>
+//   <Nested />
+//   </>
+//   );
+
+// }
+// export default App;
+
+// import Nested from "./Nested";
+import Welcome from "./Welcome";
 function App(){
   return( 
     <>
-  <Nested />
+  < Welcome />
   </>
   );
 
