@@ -172,13 +172,18 @@
 // export default App;
 
 // import Nested from "./Nested";
-import Welcome from "./Welcome";
+import Student from "./Student";
 function App(){
-  return( 
-    <>
-  < Welcome />
-  </>
-  );
+  return(
+   <div>
+    <h1>My Student</h1>
+    <h2>Student name="Iqra" </h2>
+   </div>
+   
+  )
+
+  
+  
 
 }
 export default App;
